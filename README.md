@@ -1,6 +1,6 @@
 # Photoshop-Button-Designs
 
-Photoshop document and helper script for making buttons in Photoshop.
+Photoshop document and helper script for making buttons in Photoshop. By "buttons" I mean physical objects that you pin to a jacket, not things on a web site.
 
 As is, it will create 20 1.25" buttons on a single 8.5" x 11" page. Feel free to modify the script for different sizes of buttons or paper sizes, or whatever.
 
