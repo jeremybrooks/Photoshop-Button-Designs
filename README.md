@@ -9,3 +9,5 @@ To install the script, copy it to the Photoshop Scripts directory on your comput
 ```sudo cp Button\ Maker.jsx /Applications/Adobe\ Photoshop\ 2023/Presets/Scripts```
 
 To use this script, design your button using the template. When you are satisfied with the design, duplicate the Design Layers group, then merge all of its layers into a single layer. Name that layer "Copy Me". Then, run the script. It will create a "Buttons" group and populate the group with copies of your "Copy Me" layer, spread evenly around the page. The "Copy Me" layer will be deleted.
+
+There is also a file named button-template-125_inch_all_buttons.psd that has a group for each button on the page. This file is NOT for use with the script. It can be used when you want to make several different designs on the same page.
