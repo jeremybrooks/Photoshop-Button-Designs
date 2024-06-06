@@ -44,6 +44,20 @@ function moveLayerTo(layer, x, y) {
   layer.translate(-Position[0], -Position[1]);
 }
 
+function restoreSettings() {
+  app.preferences.rulerUnits = startRulerUnits;
+  app.preferences.typeUnits = startTypeUnits;
+}
+
+
+// Save initial state
+startRulerUnits = app.preferences.rulerUnits;
+startTypeUnits = app.preferences.typeUnits;
+
+// Change settings
+app.preferences.rulerUnits = Units.PIXELS;
+app.preferences.typeUnits = TypeUnits.PIXELS;
+
 
 // These variables are used to calculate the position of the
 // buttons on the template. They are designed for 1.25" buttons,
@@ -71,6 +85,7 @@ var buttonsPerRow = 4;
 var layer = getLayer("Copy Me");
 if (layer === undefined) {
 	alert("No layer named 'Copy Me' exists.");
+	restoreSettings();
 } else {
 
 	var newGroup = app.activeDocument.layerSets.add();
@@ -97,4 +112,5 @@ if (layer === undefined) {
 		}
 	}
 	layer.remove();
+	restoreSettings();
 }
